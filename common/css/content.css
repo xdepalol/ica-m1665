@@ -269,3 +269,34 @@ body .exe-download-package-link a{background:#00AA89;text-shadow:1px 1px 1px #33
 /* Tables (to review) */
 td p{margin:.6em 0}
 td ul,td ol{margin-top:.6em;margin-bottom:.6em}
+
+/* Adaptation JdeP */
+.badge-warning {
+	background-color: #f0ad4e;
+	color: #fff;
+	font-size: 0.6em;
+	padding: 3px 8px;
+	border-radius: 4px;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-left: 8px;
+	display: inline-block;
+}
+.aea-ciclo {
+	display: none;
+	text-align: center;
+}
+.aea-nombre {
+	text-align: left;
+	/* width: 60%; */
+}
+.aea-descripcion {
+	text-align: left;
+	/* width: 40%; */
+}
+.aea-ras {
+	text-align: left;
+}
+.aea-sesiones {
+	text-align: center;
+}
