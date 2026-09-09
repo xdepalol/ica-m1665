@@ -53,6 +53,8 @@ var $eXeMapa = {
         if ($(".QuizTestIdevice .iDevice").length > 0) this.hasSCORMbutton = true;
         if (typeof ($exeAuthoring) != 'undefined') this.isInExe = true;
         this.idevicePath = this.isInExe ? "/scripts/idevices/mapa-activity/export/" : "";
+        this.commonSvgPath = this.isInExe ? this.idevicePath : "../common/svg/";
+        this.commonImgPath = this.isInExe ? this.idevicePath : "../common/img/";
         if ($("body").hasClass("exe-scorm")) this.loadSCORM_API_wrapper();
         else this.enable();
     },
@@ -194,14 +196,14 @@ var $eXeMapa = {
     },
     paintPoint: function (image, cursor, x, y, icon, instance) {
         var mOptions = $eXeMapa.options[instance];
-        var mI = (icon == 19 || icon == 39 || icon == 59 || icon == 79) ? $eXeMapa.idevicePath + 'mapam' + icon + '.png' : $eXeMapa.idevicePath + 'mapam' + icon + '.svg',
+        var mI = (icon == 19 || icon == 39 || icon == 59 || icon == 79) ? $eXeMapa.commonImgPath + 'mapam' + icon + '.png' : $eXeMapa.commonSvgPath + 'mapam' + icon + '.svg',
             number = $(cursor).data('number');
         if (mOptions.evaluation == 1 || mOptions.evaluation == -2) {
-            mI = $eXeMapa.idevicePath + 'mapam19.png';
+            mI = $eXeMapa.commonImgPath + 'mapam19.png';
             if (mOptions.activeMap.pts[number].state == 1) {
-                mI = $eXeMapa.idevicePath + 'mapaerror.png';
+                mI = $eXeMapa.commonImgPath + 'mapaerror.png';
             } else if (mOptions.activeMap.pts[number].state == 2) {
-                mI = $eXeMapa.idevicePath + 'mapahit.png';
+                mI = $eXeMapa.commonImgPath + 'mapahit.png';
             }
         }
         var icon1 = 'url(' + mI + ')';
