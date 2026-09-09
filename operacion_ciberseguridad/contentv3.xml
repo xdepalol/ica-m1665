@@ -3,7 +3,7 @@
 <instance xmlns="http://www.exelearning.org/content/v0.3" reference="2" version="0.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://www.exelearning.org/content/v0.3 content.xsd" class="exe.engine.package.Package">
  <dictionary>
   <string role="key" value="_title"></string>
-  <unicode value="Operación 3. Ciberseguridad | Digitalización aplicada a los sectores productivos "></unicode>
+  <unicode value="Operación 3. Ciberseguridad | Digitalizació aplicada als sectors productius "></unicode>
   <string role="key" value="idevices"></string>
   <list></list>
   <string role="key" value="_addPagination"></string>
@@ -528,13 +528,13 @@ Para ello se han planteado diferentes actividades y retos de aprendizaje."></uni
       <instance class="exe.engine.node.Node" reference="10">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="Hoja de ruta"></unicode>
+        <unicode value="Fulla de ruta"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="8">
           <dictionary>
            <string role="key" value="_title"></string>
-           <unicode value="Hoja de ruta del proyecto"></unicode>
+           <unicode value="Fulla de ruta del proyecto"></unicode>
            <string role="key" value="_attributes"></string>
            <list>
             <tuple>
@@ -5452,7 +5452,7 @@ Para ello se han planteado diferentes actividades y retos de aprendizaje."></uni
       <instance class="exe.engine.node.Node" reference="94">
        <dictionary>
         <string role="key" value="_title"></string>
-        <unicode value="- Guía didáctica -"></unicode>
+        <unicode value="- Guia didàctica -"></unicode>
         <string role="key" value="idevices"></string>
         <list>
          <instance class="exe.engine.jsidevice.JsIdevice" reference="92">
@@ -5529,7 +5529,7 @@ Para ello se han planteado diferentes actividades y retos de aprendizaje."></uni
               <string role="key" value="anchors_linked_from_fields"></string>
               <dictionary></dictionary>
               <string role="key" value="content_w_resourcePaths"></string>
-              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p style=&quot;text-align: left;&quot;&gt;Este recurso educativo abierto forma parte de uno más amplio que corresponde a un curso del módulo profesional de Digitalización aplicada a los sectores productivos, para ciclos formativos de grado superior. Se organiza en cinco operaciones que incluyen los diferentes resultados de aprendizaje del módulo, y que permiten ir alcanzando diferentes niveles de formación en digitalización hasta alcanzar la credencial completa que nos permite obtener el certificado de experto o experta de digitalización.&lt;/p&gt;
+              <unicode content="true" value="&lt;div class=&quot;exe-text&quot;&gt;&lt;p style=&quot;text-align: left;&quot;&gt;Este recurso educativo abierto forma parte de uno más amplio que corresponde a un curso del módulo profesional de Digitalizació aplicada als sectors productius, para ciclos formativos de grado superior. Se organiza en cinco operaciones que incluyen los diferentes resultados de aprendizaje del módulo, y que permiten ir alcanzando diferentes niveles de formación en digitalización hasta alcanzar la credencial completa que nos permite obtener el certificado de experto o experta de digitalización.&lt;/p&gt;
 &lt;p style=&quot;text-align: left;&quot;&gt;En esta tercera operación nos adentramos en lo que conlleva proteger la información de nuestra empresa ante posibles ciberataques, definiendo qué debemos proteger, y qué estrategia de defensa, detección y reacción deben definir las empresas normalmente plasmándolo en su Plan Director de Seguridad.&lt;/p&gt;
 &lt;figure class=&quot;exe-figure exe-image position-center&quot; style=&quot;width: 1000px;&quot;&gt;&lt;img src=&quot;resources/Canvas_Operacion_Ciberseguridad.png&quot; alt=&quot;Canvas Operación Ciberseguridad&quot; title=&quot;Canvas Operación Ciberseguridad&quot; width=&quot;1000&quot; height=&quot;750&quot; /&gt;
 &lt;figcaption class=&quot;figcaption&quot;&gt;&lt;span class=&quot;title&quot;&gt;&lt;em&gt;Descarga en &lt;a href=&quot;resources/Canvas_Operacion_Ciberseguridad.odp&quot; title=&quot;Descarga odp&quot;&gt;formato editable&lt;/a&gt; - Descarga en &lt;a href=&quot;resources/Canvas_Operacion_Ciberseguridad.pdf&quot; title=&quot;Descarga pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;pdf&lt;/a&gt;&lt;/em&gt;&lt;/span&gt;&lt;/figcaption&gt;
@@ -6730,7 +6730,7 @@ Para ello se han planteado diferentes actividades y retos de aprendizaje."></uni
     <string role="key" value="subject"></string>
     <unicode value=""></unicode>
     <string role="key" value="title"></string>
-    <unicode value="Operación 3. Ciberseguridad | Digitalización aplicada a los sectores productivos "></unicode>
+    <unicode value="Operación 3. Ciberseguridad | Digitalizació aplicada als sectors productius "></unicode>
     <string role="key" value="type"></string>
     <unicode value=""></unicode>
    </dictionary>
