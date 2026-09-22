@@ -2,12 +2,12 @@ body{padding:0;text-align:center;background:#fff}
 body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
 #mecd-logos{
 	max-width:1280px;
-	min-height:90px;
+	min-height:0;
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
-	gap:1.25rem;
-	padding:12px 20px;
+	gap:1rem;
+	padding:8px 20px;
 	box-sizing:border-box;
 	border-bottom:1px solid #e5e5e5;
 	text-align:left;
@@ -16,28 +16,28 @@ body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
 #mecd-logos .site-brand-left{
 	display:flex;
 	align-items:center;
-	gap:14px;
+	gap:12px;
 	min-width:0;
 }
 #mecd-logos .site-brand-left img{
-	width:56px;
+	width:48px;
 	height:auto;
 	flex-shrink:0;
 	display:block;
 }
 #mecd-logos .site-brand-text p{
 	margin:0;
-	line-height:1.25;
+	line-height:1.2;
 	color:#333;
-	font-size:.85rem;
+	font-size:.78rem;
 	font-weight:normal;
 	text-transform:none;
 	letter-spacing:0;
 	text-shadow:none;
 }
-#mecd-logos .brand-gencat{font-weight:700;font-size:.95rem}
-#mecd-logos .brand-dept{font-size:.8rem;color:#555;margin-top:.1em}
-#mecd-logos .brand-school{margin-top:.35em;font-size:.95rem;color:#222}
+#mecd-logos .brand-gencat{font-weight:700;font-size:.85rem}
+#mecd-logos .brand-dept{font-size:.72rem;color:#555;margin-top:.05em}
+#mecd-logos .brand-school{margin-top:.25em;font-size:.85rem;color:#222}
 #mecd-logos .site-brand-right{
 	text-align:right;
 	flex-shrink:1;
@@ -45,16 +45,16 @@ body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
 }
 #mecd-logos .site-brand-right p{
 	margin:0;
-	line-height:1.35;
+	line-height:1.3;
 	color:#333;
-	font-size:.9rem;
+	font-size:.85rem;
 	font-weight:normal;
 	text-transform:none;
 	letter-spacing:0;
 	text-shadow:none;
 }
 #mecd-logos .brand-cycle{font-weight:700}
-#mecd-logos .brand-module{font-size:.85rem;color:#555;margin-top:.15em}
+#mecd-logos .brand-module{font-size:.78rem;color:#555;margin-top:.1em}
 #lbOverlay{background:#f3f3f3}
 #content{width:100%;margin:0 auto 10px auto;text-align:left;position:relative;padding-bottom:21px;background:#fff url(../img/_cedec_left_column.gif) repeat-y 0 0}
 body.no-nav,.no-nav #content{background:#fff}
@@ -124,13 +124,14 @@ body.no-nav,.no-nav #content{background:#fff}
 	#mecd-logos{
 		flex-wrap:wrap;
 		min-height:0;
-		padding:10px 12px;
+		padding:8px 12px;
 	}
+	#mecd-logos .brand-cycle{display:none}
 	#mecd-logos .site-brand-right{
 		max-width:100%;
 		width:100%;
 		text-align:left;
-		padding-left:70px;
+		padding-left:60px;
 	}
 }
 
@@ -163,13 +164,12 @@ body.no-nav,.no-nav #content{background:#fff}
 }
 
 @media all and (max-width: 510px) {
-	#mecd-logos .site-brand-left img{width:48px}
-	#mecd-logos .site-brand-right{padding-left:62px}
+	#mecd-logos .site-brand-left img{width:42px}
+	#mecd-logos .site-brand-right{padding-left:54px}
 	#mecd-logos .brand-gencat,
-	#mecd-logos .brand-school,
-	#mecd-logos .brand-cycle{font-size:.85rem}
+	#mecd-logos .brand-school{font-size:.78rem}
 	#mecd-logos .brand-dept,
-	#mecd-logos .brand-module{font-size:.75rem}
+	#mecd-logos .brand-module{font-size:.7rem}
 }
 
 @media print{
