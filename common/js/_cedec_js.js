@@ -80,7 +80,22 @@ var myTheme = {
 		}
 	},
 	addHeader : function(){
-		$("body").prepend('<div id="mecd-logos"><span id="intef-logo"></span><span id="cedec-logo"></span></div>');
+		var html = ''
+			+ '<div id="mecd-logos">'
+			+   '<div class="site-brand-left">'
+			+     '<img src="../common/img/generalitat-logo.png" alt="Generalitat de Catalunya" width="62" height="73" />'
+			+     '<div class="site-brand-text">'
+			+       '<p class="brand-gencat">Generalitat de Catalunya</p>'
+			+       '<p class="brand-dept">Departament d’Educació<br />i Formació Professional</p>'
+			+       '<p class="brand-school"><strong>Institut Torre Roja</strong></p>'
+			+     '</div>'
+			+   '</div>'
+			+   '<div class="site-brand-right">'
+			+     '<p class="brand-cycle">ICA1 - CFGS ASIX Ciberseguretat</p>'
+			+     '<p class="brand-module">1665 - Digitalització Aplicada als Sectors Productius</p>'
+			+   '</div>'
+			+ '</div>';
+		$("body").prepend(html);
 	},
 	hideMenu : function(){
 		$("#siteNav").hide();
@@ -91,7 +106,11 @@ var myTheme = {
 	},
 	positionToggler : function(){
 		var header = $("#header");
-		if (header.length==1) $("#header-options").css("top",(header.height()+61)+"px")
+		var logos = $("#mecd-logos");
+		if (header.length==1) {
+			var offset = logos.length ? logos.outerHeight() : 61;
+			$("#header-options").css("top",(header.height()+offset)+"px");
+		}
 	},	
 	toggleMenu : function(e){
 		if (typeof(myTheme.isToggling)=='undefined') myTheme.isToggling = false;

@@ -1,8 +1,60 @@
-body{padding:60px 0 0;text-align:center;background:#fff url(../img/_cedec_header.png) no-repeat 0 0}
+body{padding:0;text-align:center;background:#fff}
 body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
-#mecd-logos{max-width:1280px;height:70px;position:relative}
-#mecd-logos span{height:65px;background:url(../img/_cedec_header.png) no-repeat 0 0;width:485px;position:absolute;top:6px;left:0}
-#mecd-logos #cedec-logo{width:268px;left:auto;right:10px;background-position:-494px 1px}
+#mecd-logos{
+	max-width:1280px;
+	min-height:90px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:1.25rem;
+	padding:12px 20px;
+	box-sizing:border-box;
+	border-bottom:1px solid #e5e5e5;
+	text-align:left;
+	background:#fff;
+}
+#mecd-logos .site-brand-left{
+	display:flex;
+	align-items:center;
+	gap:14px;
+	min-width:0;
+}
+#mecd-logos .site-brand-left img{
+	width:56px;
+	height:auto;
+	flex-shrink:0;
+	display:block;
+}
+#mecd-logos .site-brand-text p{
+	margin:0;
+	line-height:1.25;
+	color:#333;
+	font-size:.85rem;
+	font-weight:normal;
+	text-transform:none;
+	letter-spacing:0;
+	text-shadow:none;
+}
+#mecd-logos .brand-gencat{font-weight:700;font-size:.95rem}
+#mecd-logos .brand-dept{font-size:.8rem;color:#555;margin-top:.1em}
+#mecd-logos .brand-school{margin-top:.35em;font-size:.95rem;color:#222}
+#mecd-logos .site-brand-right{
+	text-align:right;
+	flex-shrink:1;
+	max-width:48%;
+}
+#mecd-logos .site-brand-right p{
+	margin:0;
+	line-height:1.35;
+	color:#333;
+	font-size:.9rem;
+	font-weight:normal;
+	text-transform:none;
+	letter-spacing:0;
+	text-shadow:none;
+}
+#mecd-logos .brand-cycle{font-weight:700}
+#mecd-logos .brand-module{font-size:.85rem;color:#555;margin-top:.15em}
 #lbOverlay{background:#f3f3f3}
 #content{width:100%;margin:0 auto 10px auto;text-align:left;position:relative;padding-bottom:21px;background:#fff url(../img/_cedec_left_column.gif) repeat-y 0 0}
 body.no-nav,.no-nav #content{background:#fff}
@@ -69,8 +121,17 @@ body.no-nav,.no-nav #content{background:#fff}
 #header-options #toggle-nav{background-image:url(../img/_cedec_menu.gif)}
 
 @media all and (max-width: 790px) {
-	#mecd-logos span{background-position:0 -60px;width:505px;max-width:100%}	
-	#mecd-logos #cedec-logo{background:none}
+	#mecd-logos{
+		flex-wrap:wrap;
+		min-height:0;
+		padding:10px 12px;
+	}
+	#mecd-logos .site-brand-right{
+		max-width:100%;
+		width:100%;
+		text-align:left;
+		padding-left:70px;
+	}
 }
 
 @media all and (max-width: 768px) {
@@ -102,8 +163,13 @@ body.no-nav,.no-nav #content{background:#fff}
 }
 
 @media all and (max-width: 510px) {
-	#mecd-logos{height:59px}
-	#mecd-logos span{height:59px;background-size:600px auto;background-position:0 -47px}
+	#mecd-logos .site-brand-left img{width:48px}
+	#mecd-logos .site-brand-right{padding-left:62px}
+	#mecd-logos .brand-gencat,
+	#mecd-logos .brand-school,
+	#mecd-logos .brand-cycle{font-size:.85rem}
+	#mecd-logos .brand-dept,
+	#mecd-logos .brand-module{font-size:.75rem}
 }
 
 @media print{
