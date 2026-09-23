@@ -13,7 +13,8 @@ body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
 	text-align:left;
 	background:#fff;
 }
-#mecd-logos .site-brand-left{
+#mecd-logos .site-brand-left,
+#mecd-logos-bar .site-brand-left{
 	display:flex;
 	align-items:center;
 	gap:12px;
@@ -55,6 +56,62 @@ body.js{max-width:1280px;margin:0 auto;background:#FFF;padding:0}
 }
 #mecd-logos .brand-cycle{font-weight:700}
 #mecd-logos .brand-module{font-size:.78rem;color:#555;margin-top:.1em}
+/* Fixed compact bar (separate layer → no layout flicker) */
+#mecd-logos-bar{
+	position:fixed;
+	top:0;
+	left:50%;
+	width:100%;
+	max-width:1280px;
+	z-index:1100;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:1rem;
+	padding:4px 20px;
+	box-sizing:border-box;
+	background:#fff;
+	border-bottom:1px solid #e5e5e5;
+	box-shadow:0 1px 4px rgba(0,0,0,.1);
+	text-align:left;
+	transform:translate(-50%,-110%);
+	opacity:0;
+	pointer-events:none;
+	visibility:hidden;
+	transition:transform .22s ease,opacity .22s ease,visibility .22s;
+}
+#mecd-logos-bar.is-visible{
+	transform:translate(-50%,0);
+	opacity:1;
+	pointer-events:auto;
+	visibility:visible;
+}
+#mecd-logos-bar .site-brand-left{gap:10px}
+#mecd-logos-bar .site-brand-left img{
+	width:28px;
+	height:auto;
+	flex-shrink:0;
+	display:block;
+}
+#mecd-logos-bar .brand-school{
+	margin:0;
+	font-size:.8rem;
+	line-height:1.2;
+	color:#222;
+}
+#mecd-logos-bar .site-brand-right{
+	text-align:right;
+	flex-shrink:1;
+	max-width:55%;
+	min-width:0;
+}
+#mecd-logos-bar .brand-module{
+	margin:0;
+	font-size:.75rem;
+	font-weight:600;
+	color:#333;
+	line-height:1.2;
+}
 #lbOverlay{background:#f3f3f3}
 #content{width:100%;margin:0 auto 10px auto;text-align:left;position:relative;padding-bottom:21px;background:#fff url(../img/_cedec_left_column.gif) repeat-y 0 0}
 body.no-nav,.no-nav #content{background:#fff}
@@ -71,7 +128,7 @@ body.no-nav,.no-nav #content{background:#fff}
 #skipNav{text-align:center;padding-top:25px;font-size:.95em}
 #skipNav a{border-radius:2px;padding:2px 6px 3px 6px;background:#EF801B}
 #siteNav{width:280px;float:left;padding-right:20px;margin:0 0 70px 0;border-top:10px solid #FFF}
-#siteNav.fixed{position:fixed;top:0}
+#siteNav.fixed{position:fixed;top:var(--brand-sticky-h,48px);z-index:1000}
 #siteNav ul,#siteNav li{margin:0;padding:0;list-style:none}
 #siteNav a{font-size:.95em;display:block;padding:7px 10px 7px 20px;border-bottom:1px solid #f3f3f3;color:#555;background:#f3f3f3}
 #siteNav .main-node{padding-top:20px}
@@ -133,6 +190,7 @@ body.no-nav,.no-nav #content{background:#fff}
 		text-align:left;
 		padding-left:60px;
 	}
+	#mecd-logos-bar{padding:4px 12px}
 }
 
 @media all and (max-width: 768px) {
@@ -174,7 +232,7 @@ body.no-nav,.no-nav #content{background:#fff}
 
 @media print{
 	#header,#emptyHeader{margin:0 20px;padding:30px 0 20px 0}
-	#siteNav,#header-options,.noprt,.toggle-idevice,#mecd-logos{display:none!important}
+	#siteNav,#header-options,.noprt,.toggle-idevice,#mecd-logos,#mecd-logos-bar{display:none!important}
 	#main-wrapper,.no-nav #main-wrapper{padding:20px 0}
 	body #content{background:#FFF}
 	body{padding:0}

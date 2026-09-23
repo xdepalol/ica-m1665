@@ -46,6 +46,7 @@ var myTheme = {
 		this.positionToggler();
 		$(window).resize(function(){
 			myTheme.positionToggler();
+			myTheme.updateStickyBrand();
 		});
 		var url = window.location.href;
 		url = url.split("?");
@@ -55,7 +56,9 @@ var myTheme = {
 			}
 		}
 		var toTop = $("#siteNav").offset().top;
+		myTheme.updateStickyBrand();
 		$(window).bind('scroll', function () {
+			myTheme.updateStickyBrand();
 			var nav = $('#siteNav');
 			if ($(window).scrollTop() > toTop) {
 				var navH = nav.height();
@@ -66,6 +69,22 @@ var myTheme = {
 				nav.removeClass('fixed');
 			}
 		});
+	},
+	updateStickyBrand : function(){
+		var logos = $("#mecd-logos");
+		var bar = $("#mecd-logos-bar");
+		if (!logos.length || !bar.length) return;
+		var threshold = logos.outerHeight() || 70;
+		var y = $(window).scrollTop();
+		var visible = bar.hasClass("is-visible");
+		/* Hysteresis: avoid flicker near the threshold */
+		var show = visible ? (y > threshold * 0.45) : (y > threshold * 0.9);
+		if (show !== visible) {
+			bar.toggleClass("is-visible", show);
+			bar.attr("aria-hidden", show ? "false" : "true");
+		}
+		var h = show ? (bar.outerHeight() || 0) : 0;
+		document.documentElement.style.setProperty("--brand-sticky-h", h + "px");
 	},
 	rftTitle : function(){
 		var isWebSite = $("body").hasClass("exe-web-site");
@@ -80,10 +99,11 @@ var myTheme = {
 		}
 	},
 	addHeader : function(){
+		var logoSrc = "../common/img/generalitat-logo.png";
 		var html = ''
 			+ '<div id="mecd-logos">'
 			+   '<div class="site-brand-left">'
-			+     '<img src="../common/img/generalitat-logo.png" alt="Generalitat de Catalunya" width="62" height="73" />'
+			+     '<img src="'+logoSrc+'" alt="Generalitat de Catalunya" width="62" height="73" />'
 			+     '<div class="site-brand-text">'
 			+       '<p class="brand-gencat">Generalitat de Catalunya</p>'
 			+       '<p class="brand-dept">Departament d’Educació<br />i Formació Professional</p>'
@@ -92,6 +112,15 @@ var myTheme = {
 			+   '</div>'
 			+   '<div class="site-brand-right">'
 			+     '<p class="brand-cycle">ICA1 - CFGS ASIX Ciberseguretat</p>'
+			+     '<p class="brand-module">1665 - Digitalització Aplicada als Sectors Productius</p>'
+			+   '</div>'
+			+ '</div>'
+			+ '<div id="mecd-logos-bar" aria-hidden="true">'
+			+   '<div class="site-brand-left">'
+			+     '<img src="'+logoSrc+'" alt="" width="28" height="33" />'
+			+     '<p class="brand-school"><strong>Institut Torre Roja</strong></p>'
+			+   '</div>'
+			+   '<div class="site-brand-right">'
 			+     '<p class="brand-module">1665 - Digitalització Aplicada als Sectors Productius</p>'
 			+   '</div>'
 			+ '</div>';
