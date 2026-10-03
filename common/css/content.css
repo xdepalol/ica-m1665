@@ -180,6 +180,10 @@ li{list-style-position:outside}
 .iDevice_hint_content{border-radius:2px;border:1px solid #D9DADC;background:#FFF}
 .iDevice_inner .feedback{background:#FFF;border-radius:2px;border:1px solid #D9DADC;padding:0 1em;margin:1em 0}
 .iDevice_inner .iDevice_answer-feedback{background:none;border:none;padding:0;margin:0}
+.QuizTestIdevice .iDevice_answer{cursor:pointer;border-radius:2px;padding:.15em .35em;margin:.15em 0}
+.QuizTestIdevice .iDevice_answer:hover{background:#f5f5f5}
+.QuizTestIdevice .iDevice_answer-content p{margin:.2em 0}
+.QuizTestIdevice label.iDevice_answer-content{display:block;cursor:pointer}
 .TrueFalseIdevice .feedback{margin-top:1.5em}
 
 /* Messages */

@@ -175,7 +175,7 @@ var question3;
 var key0 = 1;
 var key1 = 2;
 var key2 = 0;
-var key3 = 1;
+var key3 = 2;
 function getAnswer()
         {
             for (var i=0; i < 3; i++)
@@ -237,12 +237,12 @@ function getAnswer()
         
         function calcScore2()
         {
+            rawScore = 0;
             getAnswer();
      
             calcRawScore();
             actualScore =  Math.round(rawScore / numQuestions * 100);
             var id = "4352";
-            document.getElementById("quizForm"+id).submitB.disabled = true;
             var s = document.getElementById("quizFormScore"+id);
                         var msg_str ="La vostra puntuació és %d%%";            msg_str = msg_str.replace("%d",actualScore).replace("%%","%");            if (s) { s.innerHTML = "<div class='feedback'><p>"+msg_str+"</p></div>"; } else { alert(msg_str); }
            
@@ -263,33 +263,30 @@ function getAnswer()
 <h1 class="js-sr-av">Respostes</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key0b43521" class="sr-av"><a href="#answer-key0b43521">Opció 1</a></label><input type="radio" name="key0b4352" id="key0b43521" value="0" />
+<input type="radio" name="key0b4352" id="key0b43521" value="0" />
 </p>
-<div class="iDevice_answer-content" id="answer-key0b43521">
+<label class="iDevice_answer-content" for="key0b43521" id="answer-key0b43521">
 <div id="taoptionAnswer0q0b4352" class="block iDevice_content">
 <p>Fog</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key0b43522" class="sr-av"><a href="#answer-key0b43522">Opció 2</a></label><input type="radio" name="key0b4352" id="key0b43522" value="1" />
+<input type="radio" name="key0b4352" id="key0b43522" value="1" />
 </p>
-<div class="iDevice_answer-content" id="answer-key0b43522">
+<label class="iDevice_answer-content" for="key0b43522" id="answer-key0b43522">
 <div id="taoptionAnswer1q0b4352" class="block iDevice_content">
 <p>Mist</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key0b43523" class="sr-av"><a href="#answer-key0b43523">Opció 3</a></label><input type="radio" name="key0b4352" id="key0b43523" value="2" />
+<input type="radio" name="key0b4352" id="key0b43523" value="2" />
 </p>
-<div class="iDevice_answer-content" id="answer-key0b43523">
+<label class="iDevice_answer-content" for="key0b43523" id="answer-key0b43523">
 <div id="taoptionAnswer2q0b4352" class="block iDevice_content">
 <p>Edge</p>
-</div>
-</div>
+</div></label>
 </section>
 </section>
 </section>
@@ -302,33 +299,30 @@ function getAnswer()
 <h1 class="js-sr-av">Respostes</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key1b43521" class="sr-av"><a href="#answer-key1b43521">Opció 1</a></label><input type="radio" name="key1b4352" id="key1b43521" value="0" />
+<input type="radio" name="key1b4352" id="key1b43521" value="0" />
 </p>
-<div class="iDevice_answer-content" id="answer-key1b43521">
+<label class="iDevice_answer-content" for="key1b43521" id="answer-key1b43521">
 <div id="taoptionAnswer0q1b4352" class="block iDevice_content">
 <p>Fog</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key1b43522" class="sr-av"><a href="#answer-key1b43522">Opció 2</a></label><input type="radio" name="key1b4352" id="key1b43522" value="1" />
+<input type="radio" name="key1b4352" id="key1b43522" value="1" />
 </p>
-<div class="iDevice_answer-content" id="answer-key1b43522">
+<label class="iDevice_answer-content" for="key1b43522" id="answer-key1b43522">
 <div id="taoptionAnswer1q1b4352" class="block iDevice_content">
 <p>Mist</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key1b43523" class="sr-av"><a href="#answer-key1b43523">Opció 3</a></label><input type="radio" name="key1b4352" id="key1b43523" value="2" />
+<input type="radio" name="key1b4352" id="key1b43523" value="2" />
 </p>
-<div class="iDevice_answer-content" id="answer-key1b43523">
+<label class="iDevice_answer-content" for="key1b43523" id="answer-key1b43523">
 <div id="taoptionAnswer2q1b4352" class="block iDevice_content">
 <p>Edge</p>
-</div>
-</div>
+</div></label>
 </section>
 </section>
 </section>
@@ -341,33 +335,30 @@ function getAnswer()
 <h1 class="js-sr-av">Respostes</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key2b43521" class="sr-av"><a href="#answer-key2b43521">Opció 1</a></label><input type="radio" name="key2b4352" id="key2b43521" value="0" />
+<input type="radio" name="key2b4352" id="key2b43521" value="0" />
 </p>
-<div class="iDevice_answer-content" id="answer-key2b43521">
+<label class="iDevice_answer-content" for="key2b43521" id="answer-key2b43521">
 <div id="taoptionAnswer0q2b4352" class="block iDevice_content">
 <p>Fog</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key2b43522" class="sr-av"><a href="#answer-key2b43522">Opció 2</a></label><input type="radio" name="key2b4352" id="key2b43522" value="1" />
+<input type="radio" name="key2b4352" id="key2b43522" value="1" />
 </p>
-<div class="iDevice_answer-content" id="answer-key2b43522">
+<label class="iDevice_answer-content" for="key2b43522" id="answer-key2b43522">
 <div id="taoptionAnswer1q2b4352" class="block iDevice_content">
 <p>Mist</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key2b43523" class="sr-av"><a href="#answer-key2b43523">Opció 3</a></label><input type="radio" name="key2b4352" id="key2b43523" value="2" />
+<input type="radio" name="key2b4352" id="key2b43523" value="2" />
 </p>
-<div class="iDevice_answer-content" id="answer-key2b43523">
+<label class="iDevice_answer-content" for="key2b43523" id="answer-key2b43523">
 <div id="taoptionAnswer2q2b4352" class="block iDevice_content">
 <p>Edge</p>
-</div>
-</div>
+</div></label>
 </section>
 </section>
 </section>
@@ -380,33 +371,30 @@ function getAnswer()
 <h1 class="js-sr-av">Respostes</h1>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key3b43521" class="sr-av"><a href="#answer-key3b43521">Opció 1</a></label><input type="radio" name="key3b4352" id="key3b43521" value="0" />
+<input type="radio" name="key3b4352" id="key3b43521" value="0" />
 </p>
-<div class="iDevice_answer-content" id="answer-key3b43521">
+<label class="iDevice_answer-content" for="key3b43521" id="answer-key3b43521">
 <div id="taoptionAnswer0q3b4352" class="block iDevice_content">
 <p>Fog</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key3b43522" class="sr-av"><a href="#answer-key3b43522">Opció 2</a></label><input type="radio" name="key3b4352" id="key3b43522" value="1" />
+<input type="radio" name="key3b4352" id="key3b43522" value="1" />
 </p>
-<div class="iDevice_answer-content" id="answer-key3b43522">
+<label class="iDevice_answer-content" for="key3b43522" id="answer-key3b43522">
 <div id="taoptionAnswer1q3b4352" class="block iDevice_content">
 <p>Mist</p>
-</div>
-</div>
+</div></label>
 </section>
 <section class="iDevice_answer">
 <p class="iDevice_answer-field js-required">
-<label for="key3b43523" class="sr-av"><a href="#answer-key3b43523">Opció 3</a></label><input type="radio" name="key3b4352" id="key3b43523" value="2" />
+<input type="radio" name="key3b4352" id="key3b43523" value="2" />
 </p>
-<div class="iDevice_answer-content" id="answer-key3b43523">
+<label class="iDevice_answer-content" for="key3b43523" id="answer-key3b43523">
 <div id="taoptionAnswer2q3b4352" class="block iDevice_content">
 <p>Edge</p>
-</div>
-</div>
+</div></label>
 </section>
 </section>
 </section>
