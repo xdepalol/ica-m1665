@@ -208,6 +208,16 @@ body .pbl-task-info{line-height:2em;margin-top:-.4em;color:#666;text-align:left}
 dt.pbl-task-duration span{padding-left:32px;background:url(../img/_cedec_pbl_duration.png) no-repeat 0 50%}
 dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl_participants.png) no-repeat 0 50%}
 
+/* Estimated time inside challenge phases */
+.repte-timing{margin:.6em 0 1em;color:#666}
+.repte-timing span{font-weight:bold;padding-left:32px;background:url(../img/_cedec_pbl_duration.png) no-repeat 0 50%}
+
+/* Inline activity meta (duration / grouping) with PBL icons */
+.task-meta-duration > span,
+.task-meta-participants > span{font-weight:bold;padding-left:32px;background-repeat:no-repeat;background-position:0 50%}
+.task-meta-duration > span{background-image:url(../img/_cedec_pbl_duration.png)}
+.task-meta-participants > span{background-image:url(../img/_cedec_pbl_participants.png)}
+
 #theme-iframe-text{display:none}
 #theme-iframe{display:none;width:100%;border:0}
 #theme-iframe-indicator{height:625px;padding-top:75px;background:url(../img/_cedec_loading.gif) no-repeat 50% 25px;text-align:center}
