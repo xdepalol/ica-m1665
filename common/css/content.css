@@ -235,6 +235,8 @@ dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl
 /* End-of-activity checklist (shared student/teacher criteria) */
 .activitat-comprova{margin:1.5em 0 0;padding:.85em 1em .9em 3.25em;background:#E5F3E0 url(../img/_cedec_icon_success.png) no-repeat 12px 1em;border:1px solid #cfe3c8;border-radius:2px;color:#336634}
 .activitat-comprova-titol{margin:0 0 .45em;font-weight:bold}
+.activitat-comprova-apartat{margin:1em 0 .35em;font-weight:bold;font-size:1em}
+.activitat-comprova-apartat:first-of-type{margin-top:.55em}
 .activitat-comprova ul{list-style:none;margin:.15em 0 0;padding:0}
 .activitat-comprova li{position:relative;margin:.35em 0;padding-left:1.55em;line-height:1.4}
 .activitat-comprova li:before{content:"";position:absolute;left:0;top:.28em;width:.85em;height:.85em;border:1.5px solid #5a8f5c;border-radius:2px;background:#fff;box-sizing:border-box}

@@ -81,7 +81,7 @@
 <article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id4346">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)">
-   <h1 class="iDeviceTitle">Detectiu de la dada</h1>
+   <h1 class="iDeviceTitle" id="activitat-detectiu-de-la-dada">Detectiu de la dada</h1>
 </header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
@@ -133,6 +133,15 @@
 
    <p><b>Síntesi</b>: Quina d’aquestes dades creieu que seria útil gestionar des del núvol? Trieu-ne una i expliqueu breument per què.</p>
    <p>No oblidis registrar aquesta tasca a teu arxiu LOG amb el títol <b>"Detectiu de la dada"</b>.</p>
+   <aside class="activitat-comprova" aria-label="Comprovació de l'activitat">
+      <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+      <ul>
+         <li>He explicat com es poden emmagatzemar i processar les dades proposades.</li>
+         <li>He indicat un ús concret de la informació per a l’empresa.</li>
+         <li>He triat una dada per gestionar al núvol i n’he justificat l’elecció.</li>
+         <li>He registrat l’activitat al LOG amb el títol indicat.</li>
+      </ul>
+   </aside>
 </div>
 </div>
 </div>
@@ -753,14 +762,14 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
 </article>
 <article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_diary_alt" id="id1523">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(../common/img/icon_diary_alt.png)"><h1 class="iDeviceTitle">Carpeta d’aprenentatge (LOG)</h1></header>
+<header class="iDevice_header" style="background-image:url(../common/img/icon_diary_alt.png)"><h1 class="iDeviceTitle">Arxiu LOG</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta1523_864_2" class="block iDevice_content">
 <div class="exe-text">
 <p>Un log o registre és un document on s’anoten de manera ordenada els esdeveniments i les accions que tenen lloc durant un procés o sistema. És un recurs molt habitual en l’àmbit informàtic.</p>
-<p>En aquest mòdul utilitzarem el LOG com a carpeta d’aprenentatge. Hi anirem documentant les activitats, reptes, evidències i reflexions que generem al llarg de les diferents operacions.</p>
-<p>Aquesta carpeta ens permetrà:</p>
+<p>En aquest mòdul utilitzarem l’arxiu LOG com a carpeta d’aprenentatge. Hi anirem documentant les activitats, els minireptes, el repte transversal i les reflexions que generem al llarg de les diferents operacions.</p>
+<p>Aquest arxiu ens permetrà:</p>
 
 <ul>
    <li>documentar el treball realitzat;</li>
@@ -769,16 +778,16 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
    <li>reflexionar sobre què hem après, les dificultats que hem trobat i com hem evolucionat;</li>
    <li>construir un recull de recursos útil durant el mòdul.</li>
 </ul>
-<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 599px;"><img src="../common/img/Operaciones.png" alt="Elements de la carpeta d’aprenentatge (LOG)" title="Elements de la carpeta d’aprenentatge (LOG)" width="599" height="428" />
-<figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Elements de la carpeta d’aprenentatge (LOG)</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 599px;"><img src="../common/img/Operaciones.png" alt="Elements de l'arxiu LOG" title="Elements de l'arxiu LOG" width="599" height="428" />
+<figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Elements de l'arxiu LOG</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
 </figure>
 <p></p>
 <div class="exe-fx exe-tabs">
 <h2>Portada personalitzada</h2>
-<p>La carpeta d’aprenentatge començarà amb una portada que inclogui:</p>
+<p>L'arxiu LOG començarà amb una portada que inclogui:</p>
 <ul>
 <li>nom i cognoms</li>
-<li>títol: Carpeta d’aprenentatge (LOG) — Digitalització aplicada als sectors productius</li>
+<li>títol: Arxiu LOG — Digitalització aplicada als sectors productius</li>
 <li>curs acadèmic i cicle formatiu</li>
 <li>nom del professor o professora</li>
 </ul>
@@ -794,18 +803,21 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
 </ul>
 
 <h2>Desenvolupament de l’operació</h2>
-<p>Al llarg de cada operació incorporarem al LOG:</p>
+<p>Cada operació tindrà una secció pròpia dins del LOG, on incorporarem les activitats, el minirepte i les reflexions sobre l’aprenentatge. En l’operació final, hi documentarem el repte transversal.</p>
+<p>Per a cada activitat:</p>
 <ol>
-   <li><b>Evidències del treball realitzat:</b> textos, informes, captures, enllaços, esquemes, produccions o altres materials generats durant les activitats. Les evidències han d’estar correctament identificades i contextualitzades.</li>
-   <li><b>Reflexions sobre l’aprenentatge:</b> què hem après, quines dificultats hem trobat o resolt i com ha evolucionat la nostra comprensió dels continguts treballats.</li>
+   <li>Identificarem l’entrada amb el títol de l’activitat i explicarem breument què hem fet i amb quina finalitat.</li>
+   <li>Elaborarem la resposta seguint les instruccions i utilitzant el material proporcionat. Diferenciarem i justificarem les deduccions o ampliacions que hi incorporem.</li>
+   <li>Abans de donar-la per acabada, revisarem els indicadors del requadre «Abans de tancar, comprova…» i farem les millores necessàries.</li>
+   <li>Incorporarem al LOG la versió revisada i les evidències corresponents: textos, esquemes, captures, enllaços o altres produccions. Les evidències han d’estar contextualitzades perquè s’entengui què mostren.</li>
 </ol>
-
-<p><b>Nota.</b> Per orientar les reflexions, ens podem preguntar:</p>
+<p>També hi inclourem reflexions sobre què hem après, quines dificultats hem trobat, com les hem afrontat i com ha evolucionat la nostra comprensió.</p>
+<p>Per orientar aquestes reflexions, ens podem preguntar:</p>
 <ul>
    <li>Què he après?</li>
-   <li>Què m’ha resultat més difícil?</li>
-   <li>Com ho he resolt?</li>
+   <li>Què m’ha resultat més difícil i com ho he afrontat?</li>
    <li>Què entenc ara que abans no entenia?</li>
+   <li>Quina evidència del meu treball mostra aquest aprenentatge?</li>
    <li>Què m’agradaria continuar explorant?</li>
 </ul>
 
@@ -817,18 +829,14 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
 </ul>
 <p>Els podem organitzar per operacions, temes o tipologia de recurs, segons ens resulti més útil.</p>
 
-<h2>Checklist</h2>
-<p>Abans de donar per finalitzada la carpeta d’aprenentatge d’una operació, utilitzarem el <b>checklist del LOG</b> per comprovar que hem documentat correctament el nostre treball, que les evidències estan contextualitzades, que hem reflexionat sobre l’aprenentatge i que el document presenta una organització i una correcció adequades.</p>
-<p>Podem descarregar el checklist en format <a href="checklist-arxiu-LOG.pdf" title="Descàrrega pdf">pdf</a>.</p>
-
-<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 700px;"><img src="checklist-arxiu-LOG.png" alt="Checklist de la carpeta d’aprenentatge (LOG)" title="Checklist de la carpeta d’aprenentatge (LOG)" width="700" height="906" />
-<figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Checklist de la carpeta d’aprenentatge (LOG)</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
-</figure>
+<h2>Revisió i valoració del LOG</h2>
+<p>Abans de lliurar el LOG de cada operació, en revisarem el conjunt: comprovarem que les activitats estan documentades, que les evidències es poden consultar i que hem reflexionat sobre el nostre aprenentatge.</p>
+<p>A la pàgina «Analitzem l’arxiu LOG» trobarem la llista de comprovació per fer aquesta revisió i la rúbrica específica amb què es valorarà el document</p>
 </div></div>
-<div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Rúbrica de la carpeta d’aprenentatge (LOG)" /></div>
+<div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Rúbrica de l'arxiu LOG" /></div>
 <div class="feedback js-feedback js-hidden">
-   <p>Utilitzarem la següent rúbrica per valorar la carpeta d’aprenentatge (LOG). La podem descarregar en format <a href="rubrica-arxiu-LOG.pdf" title="Descàrrega pdf">PDF</a>.</p>
-<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="rubrica-arxiu-LOG.png" alt="Rúbrica de la carpeta d’aprenentatge (LOG)" title="Rúbrica de la carpeta d’aprenentatge (LOG)" width="901" height="637" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" /></figure></div>
+   <p>Utilitzarem la següent rúbrica per valorar l'arxiu LOG. La podem descarregar en format <a href="rubrica-arxiu-LOG.pdf" title="Descàrrega pdf">PDF</a>.</p>
+<figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="rubrica-arxiu-LOG.png" alt="Rúbrica de l'arxiu LOG" title="Rúbrica de l'arxiu LOG" width="901" height="637" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" /></figure></div>
 </div>
 </div>
 </div>
@@ -1111,9 +1119,9 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
 
          <h2>Fase 3: Seleccionem els serveis cloud</h2>
          <p class="repte-timing"><span>Temps aproximat:</span> 20-25 minuts</p>
-         <p>Ara que heu identificat les principals necessitats de l'empresa, és el moment de decidir <b>quins serveis cloud podrien ajudar a donar-hi resposta</b>.</p>
+         <p>Ara que heu identificat les principals necessitats de l'empresa, és el moment de decidir <b>quins serveis cloud podrien ajudar a donar-hi resposta</b>. </p>
          <p>Reviseu les necessitats que heu seleccionat a la fase anterior i valoreu quin tipus de servei — <b>SaaS, PaaS o IaaS</b> — seria adequat en cada cas. <b>No cal utilitzar els tres models</b>: seleccioneu només els que considereu necessaris i justifiqueu la vostra decisió.</p>
-         <p>Podeu recuperar el servei que vau analitzar a l'activitat «<b>Explorem els serveis d'un proveïdor cloud</b>» si encaixa amb alguna de les necessitats de la vostra empresa. Si no és adequat, podeu consultar breument el catàleg d'un dels proveïdors explorats per localitzar una alternativa.</p>
+         <p>Trieu el servei que millor respongui a la necessitat identificada i expliqueu per què és adequat per a l’empresa del cas. Si s’escau, podeu recuperar el servei que vau analitzar a l’activitat «<b>Explorem els serveis d'un proveïdor cloud</b>».</p>
          <p>Al vostre arxiu LOG, creeu l'apartat «<b>Fase 3. Seleccionem els serveis cloud</b>» i completeu una taula com aquesta:</p>
          <table border="1" class="exe-table">
             <thead>
@@ -1211,6 +1219,17 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
       </div>
 
       <p>Un cop tingueu totes les fases completades, recordeu <b>guardar el treball al vostre arxiu LOG</b> amb el títol «<b>REPTE: De la dada al Cloud</b>».</p>
+      <aside class="activitat-comprova" aria-label="Comprovació del repte">
+         <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+         <ul>
+            <li>He analitzat el cas triat a partir de la informació que proporciona, sense afegir dades d’altres empreses.</li>
+            <li>He identificat les necessitats prioritàries i les he relacionat amb les dades de l’empresa.</li>
+            <li>Cada servei cloud proposat respon a una necessitat identificada i n’he explicat per què és adequat.</li>
+            <li>He justificat el tipus de cloud, n’he identificat un risc o inconvenient i he valorat si cal processar dades prop del lloc on es generen.</li>
+            <li>He proposat tres accions ordenades i he identificat un risc d’adopció amb una possible resposta.</li>
+            <li>He registrat totes les fases al LOG amb el títol indicat.</li>
+         </ul>
+      </aside>
       <div id="ta7359962-db85-1375-20e2-14629ecc273d" class="exe-dialog-text js-hidden">
          <ul>
             <li>Un núvol públic és l'opció més comuna per començar, perquè és flexible i econòmica. Per exemple: fer servir Google Drive, Dropbox o Microsoft 365 és treballar amb núvol públic, ja que compartim recursos amb altres usuaris però només paguem pel que fem servir.</li>
@@ -1344,7 +1363,7 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
       <figure class="exe-figure exe-media position-center license-CC-BY-SA" style="width: 700px;"><iframe width="700" height="500" src="Arquitectura_cloud.pdf"></iframe>
       <figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Arquitectura Cloud</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
       </figure>
-      <p style="text-align: left;">Per últim, anotarem tots aquests passos i la nostra infografia a la nostra carpeta d’aprenentatge (LOG) amb extensió .OC. </p>
+      <p style="text-align: left;">Per últim, anotarem tots aquests passos i la nostra infografia a el nostre arxiu LOG amb extensió .OC. </p>
    </div>
 -->
 </div>
@@ -1368,10 +1387,21 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
 <p><br /><strong>Exemple pràctic per visualitzar-ho:</strong></p>
 <p style="padding-left: 30px;">Imaginem un petit comerç. Cada dia, el Terminal Punt de Venda (TPV) registra totes les vendes realitzades. Aquestes dades de vendes no es queden guardades només al TPV: s’envien automàticament al núvol. Un cop allà, es processen, s’emmagatzemen i es combinen amb altres dades (com l’estoc disponible). D’aquesta manera, els responsables de botiga poden generar informes actualitzats en temps real, consultar quins productes cal reposar o accedir a aquests informes des de qualsevol sucursal o fins i tot des del mòbil.</p>
 <p>Conèixer aquest recorregut ajuda a comprendre per què l’arquitectura cloud no és només emmagatzematge, sinó una forma de treballar amb dades en moviment i sota demanda.</p></div>
-<div class="iDevice_buttons feedback-button js-required">
-   <input type="button" class="feedbackbutton" value="Activitat: El viatge de les dades" />
 </div>
-<div class="feedback js-feedback js-hidden">
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_activity" id="idActViatge">
+<div class="iDevice emphasis1">
+<header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)"><h1 class="iDeviceTitle" id="activitat-viatge-de-les-dades">El viatge de les dades</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="block iDevice_content">
+   <p>
+      <span class="task-meta-duration"><span>Duració:</span> 10-15 minuts</span><br />
+      <span class="task-meta-participants"><span>Agrupament:</span> Individual o en parelles</span>
+   </p>
    <p>Cada vegada que pugem, consultem o modifiquem informació al núvol, les dades recorren diferents elements de la infraestructura cloud abans que les puguem tornar a utilitzar.</p>
    <p>Per visualitzar què hi ha darrere d'aquest procés, començarem veient el vídeo:</p>
    <figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px;"><iframe width="560" height="314" src="https://www.youtube.com/embed/aXO03qKwwyU" allowfullscreen="allowfullscreen"></iframe>
@@ -1383,7 +1413,15 @@ Per aconseguir-ho, hem dissenyat activitats i reptes que permeten a l'alumnat co
    </p>
    <p>Afegiu una breu explicació de <b>quin avantatge aporta en aquest cas gestionar la dada al núvol</b>.</p>
    <p>Incloeu l'esquema al vostre arxiu LOG amb el títol «<b>El viatge de les dades</b>».</p>
-</div>
+   <aside class="activitat-comprova" aria-label="Comprovació de l'activitat">
+      <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+      <ul>
+         <li>He triat una dada concreta i n’he representat el recorregut.</li>
+         <li>L’esquema inclou origen, xarxa, infraestructura cloud, emmagatzematge o processament i ús de la informació.</li>
+         <li>He explicat quin avantatge aporta gestionar aquesta dada al núvol.</li>
+         <li>He registrat l’esquema al LOG amb el títol indicat.</li>
+      </ul>
+   </aside>
 </div>
 </div>
 </div>
@@ -1759,16 +1797,21 @@ function getAnswer()
 <h2>SaaS (Programari com a Servei)</h2>
 <p>Aquest és el model més comú per a pimes, perquè és el més senzill. Utilitzem programes i aplicacions directament des d’internet: no cal instal·lar-los ni actualitzar-los, tot es fa en línia. Paguem per ús i tenim accés des de qualsevol lloc.<br />Exemple: fer servir Gmail, Google Drive, Office 365, Dropbox o programes de facturació en línia.</p>
 </div></div>
-<div class="iDevice_buttons feedback-button js-required">
-   <input type="button" class="feedbackbutton" value="Activitat: Explorem els serveis d'un proveïdor cloud" />
 </div>
-<div class="feedback js-feedback js-hidden">
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_activity" id="idActExplorem">
+<div class="iDevice emphasis1">
+<header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)"><h1 class="iDeviceTitle" id="activitat-explorem-serveis-cloud">Explorem els serveis d'un proveïdor cloud</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="block iDevice_content">
    <p>
-      <b>Explorem els serveis d'un proveïdor cloud</b><br />
       <span class="task-meta-duration"><span>Duració:</span> 20–30 minuts</span><br />
       <span class="task-meta-participants"><span>Agrupament:</span> Individual o en parelles</span>
    </p>
-
    <p>Els proveïdors de serveis cloud ofereixen un ampli ventall de solucions de computació, emmagatzematge, bases de dades, desenvolupament d'aplicacions i altres serveis digitals. En aquesta activitat explorarem com es concreten en una oferta real alguns dels conceptes que acabem d'estudiar.</p>
    <p>Trieu <b>un dels proveïdors proposats</b>. Si coneixeu un altre proveïdor cloud que us interessi especialment, també el podeu utilitzar.</p>
    <ul>
@@ -1817,7 +1860,16 @@ function getAnswer()
    </blockquote>
 
    <p>Incloeu aquesta breu anàlisi al vostre arxiu LOG amb el títol «<b>Explorem els serveis d'un proveïdor cloud</b>».</p>
-</div>
+   <aside class="activitat-comprova" aria-label="Comprovació de l'activitat">
+      <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+      <ul>
+         <li>He triat un proveïdor i un servei concret.</li>
+         <li>He explicat què ofereix el servei i per a quina necessitat empresarial podria ser útil.</li>
+         <li>He identificat el model de servei, si és aplicable.</li>
+         <li>He indicat una referència de preu o de tarifació proporcionada pel proveïdor.</li>
+         <li>He registrat l’anàlisi al LOG amb el títol indicat.</li>
+      </ul>
+   </aside>
 </div>
 </div>
 </div>
@@ -1854,7 +1906,7 @@ function getAnswer()
       <figure class="exe-figure exe-media position-center" style="width: 560px;"><iframe width="560" height="314" src="https://www.youtube.com/embed/pgSaYsgI6NU" allowfullscreen="allowfullscreen"></iframe>
       <figcaption class="figcaption"><span class="author">OnlyOffice</span>. <span class="title"><em>Edit and co-author documents within Nextcloud</em></span></figcaption>
       </figure>
-      <p data-start="1667" data-end="1837">Per finalitzar, documentem el procés a la nostra carpeta d’aprenentatge (LOG) (.OC), incloent-hi captures de pantalla de l’estructura de carpetes, del fitxer compartit i de l’edició col·laborativa.</p>
+      <p data-start="1667" data-end="1837">Per finalitzar, documentem el procés a el nostre arxiu LOG (.OC), incloent-hi captures de pantalla de l’estructura de carpetes, del fitxer compartit i de l’edició col·laborativa.</p>
       <p data-start="1839" data-end="2098">Amb aquesta pràctica no només aprendrem a fer servir una eina lliure al núvol, sinó que també entendrem els avantatges de <strong data-start="1965" data-end="2010">controlar on es guarden les nostres dades</strong> i com podem treballar de forma professional sense dependre de plataformes comercials.</p>
       <p data-start="1839" data-end="2098">Per ajudar-nos a completar aquesta activitat pas a pas, hem preparat la <a href="https://cedec.intef.es/rubrica/ficha-nextcloud/" title="Enllaç a banc de rúbriques. Obre en finestra nova.">fitxa Nextcloud</a> de treball. La podem descarregar en <a href="cedec-Ficha_nextcloud_operacioncloud.odt" title="Descàrrega odt">format editable</a> i en <a href="cedec-Ficha_nextcloud_operacioncloud.pdf" title="Descàrrega pdf">pdf</a>.</p>
       <figure class="exe-figure exe-media position-center license-CC-BY-SA" style="width: 700px;"><iframe width="700" height="500" src="NextCloud.pdf"></iframe>
@@ -1916,7 +1968,7 @@ function getAnswer()
 <link rel="stylesheet" type="text/css" href="../common/css/content.css" />
 <link rel="stylesheet" type="text/css" href="../common/css/nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Analitzem la carpeta d’aprenentatge (LOG) | Operació 2. Cloud Computing | Digitalització aplicada als sectors productius  </title>
+<title>Analitzem l'arxiu LOG | Operació 2. Cloud Computing | Digitalització aplicada als sectors productius  </title>
 <link rel="shortcut icon" href="../common/img/favicon.ico" type="image/x-icon" />
 <meta name="author" content="Diana Expósito Martín, Antonio Juliá Soler y María Cruz García Sanchís para Cedec" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -1957,26 +2009,46 @@ function getAnswer()
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Analitzem la carpeta d’aprenentatge (LOG)</h1></header>
+<header id="nodeDecoration"><h1 id="nodeTitle">Analitzem l'arxiu LOG</h1></header>
 <article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_interactive" id="id40">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(../common/img/icon_interactive.png)"><h1 class="iDeviceTitle">Autoavaluació: Checklist de la carpeta d’aprenentatge (LOG)</h1></header>
+<header class="iDevice_header" style="background-image:url(../common/img/icon_interactive.png)"><h1 class="iDeviceTitle">Autoavaluació: Checklist de l'arxiu LOG</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta40_841_2" class="block iDevice_content">
-<div class="exe-text"><p>Com a professionals en formació, mantenir un registre clar i ordenat del nostre treball és clau per avaluar el progrés i garantir la qualitat de les nostres propostes. La nostra carpeta d’aprenentatge (LOG) recull tot el progrés desenvolupat al llarg del repte: diagnòstics, idees, solucions i reflexions.</p>
-<p>En aquesta fase, ens aturem a analitzar i revisar el contingut de la carpeta d’aprenentatge (LOG) per comprovar que:</p>
-<ul>
-<li>Totes les tasques i activitats estan completes i ben organitzades</li>
-<li>Cada entrada està correctament etiquetada i contextualitzada</li>
-<li>Hem respost a tot allò sol·licitat en els enunciats</li>
-<li>La reflexió final sobre el nostre aprenentatge com a experts/es digitals està inclosa</li>
-</ul>
-<p>Aquesta anàlisi no és només una comprovació tècnica: és també una forma de reflexionar sobre com hem aplicat els coneixements adquirits, com ha evolucionat la nostra mirada professional i quins aprenentatges ens emportem per al futur.</p>
-<p>Un cop fet el repàs complet, completarem el <a href="https://cedec.intef.es/rubrica/checklist-de-autoevaluacion/" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." class="exe-external-link" rel="noopener">checklist de la carpeta d’aprenentatge (LOG)</a> en <a href="cedec-checklist_Archivo_LOG_Operaciones.odp" title="Descàrrega odp">format editable</a> o en <a href="cedec-checklist_Archivo_LOG_Operaciones.pdf" title="Descàrrega pdf">pdf</a> i passarem a la fase d'avaluació.</p>
-<figure class="exe-figure exe-media position-center license-CC-BY-SA" style="width: 700px;"><iframe width="700" height="400" src="Checklist_Archivo_LOG_Operaciones.1.pdf"></iframe>
-<figcaption class="figcaption"><span class="title"><em>Checklist de la carpeta d’aprenentatge (LOG)</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
-</figure></div>
+<div class="exe-text">
+   <p>Com a professionals en formació, mantenir un registre clar i ordenat del nostre treball és clau per avaluar el progrés i garantir la qualitat de les nostres propostes. El nostre arxiu LOG recull el treball i els aprenentatges de tota l’operació.</p>
+   <p>En aquesta fase, ens aturem a revisar la secció del LOG corresponent a l’operació. Utilitzem la llista de comprovació següent per identificar què ens falta completar o millorar i fem els ajustos necessaris abans del lliurament.</p>
+   <p>Aquesta revisió no és només una comprovació formal: també ens permet reflexionar sobre com hem aplicat els coneixements, com ha evolucionat la nostra comprensió i quins aprenentatges ens emportem cap al futur.</p>
+   <aside class="activitat-comprova" aria-label="Checklist de l'arxiu LOG">
+      <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+      <p class="activitat-comprova-apartat">Registre i seguiment</p>
+      <ul>
+         <li>He registrat les activitats, reptes i tasques realitzades.</li>
+         <li>Les entrades estan ordenades i permeten seguir el meu procés d'aprenentatge.</li>
+         <li>Cada entrada està contextualitzada: queda clar què he fet i amb quina finalitat.</li>
+      </ul>
+      <p class="activitat-comprova-apartat">Documentació del treball</p>
+      <ul>
+         <li>He inclòs evidències del treball realitzat: textos, captures, enllaços, documents o altres produccions.</li>
+         <li>Les evidències estan relacionades amb l'activitat corresponent i s'entén què mostren.</li>
+         <li>He comprovat que els enllaços i les evidències incorporades són accessibles i es visualitzen correctament.</li>
+      </ul>
+      <p class="activitat-comprova-apartat">Reflexió personal</p>
+      <ul>
+         <li>He reflexionat sobre què he après, i no només he descrit què he fet.</li>
+         <li>He identificat dificultats, dubtes o aspectes que he hagut de resoldre i què n'he après.</li>
+         <li>Puc identificar com ha evolucionat el meu aprenentatge al llarg de l'AEA.</li>
+      </ul>
+      <p class="activitat-comprova-apartat">Organització, presentació i correcció</p>
+      <ul>
+         <li>He utilitzat títols, subtítols i/o dates perquè les entrades siguin fàcils de localitzar.</li>
+         <li>El LOG té un format clar, coherent i fàcil de llegir.</li>
+         <li>He passat els textos per un corrector ortogràfic i n'he revisat la redacció abans de donar-los per acabats.</li>
+      </ul>
+   </aside>
+   <p>Podeu descarregar aquest llistat en format PDF: <a href="checklist-arxiu-LOG.pdf" title="Descàrrega pdf">checklist-arxiu-LOG.pdf</a>.</p>
+</div>
 </div>
 </div>
 </div>
@@ -1984,14 +2056,17 @@ function getAnswer()
 </article>
 <article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_interactive" id="id38">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(../common/img/icon_interactive.png)"><h1 class="iDeviceTitle">Avaluem el treball desenvolupat en el desafiament</h1></header>
+<header class="iDevice_header" style="background-image:url(../common/img/icon_interactive.png)"><h1 class="iDeviceTitle">Com s'avalua l'arxiu LOG</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta38_863_2" class="block iDevice_content">
-<div class="exe-text"><p style="text-align: justify;">Finalitzada la nostra Operació Cloud Computing, revisarem juntament amb el nostre professor/a les tasques i documents que inclou la nostra carpeta d’aprenentatge (LOG) i, per a això, utilitzarem la <a href="https://cedec.intef.es/rubrica/rubrica-del-archivo-log-2/" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." class="exe-external-link" rel="noopener">rúbrica d'avaluació de les entrades a la carpeta d’aprenentatge (LOG)</a> que p<span>odem descarregar en </span><a href="cedec-Rubrica_Archivo_LOG_Operaciones.2.odt" title="Descàrrega odt">format editable</a><span> i </span><a href="cedec-Rubrica_Archivo_LOG_Operaciones.1.pdf" title="Descàrrega pdf">pdf</a><span>.</span></p>
-<p>   <img src="cedec-Rubrica_Archivo_LOG_Operaciones.1.png" alt="Rúbrica d'avaluació" width="901" height="637" style="display: block; margin-left: auto; margin-right: auto;" /></p>
-<p style="text-align: justify;">Posteriorment, el nostre professor o professora avaluarà l'acompliment en les diferents etapes i activitats de l'operació mitjançant la <a href="https://cedec.intef.es/rubrica/rubrica-de-evaluacion-operacion-cloud/" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." rel="noopener">rúbrica de l'operació</a> que podem descarregar en <a href="cedec-Rubrica_Operacion_Cloud.odt" title="Descàrrega odt">format editable</a> i en <a href="cedec-Rubrica_Operacion_Cloud.pdf" title="Descàrrega pdf">pdf</a>.</p>
-<figure class="exe-figure exe-image position-center" style="width: 900px;"><img src="cedec-Rubrica_Operacion_Cloud.png" alt="Rúbrica Operació Cloud" title="Rúbrica Operació Cloud" width="1124" height="795" hspace="auto" style="display: block; margin-left: auto; margin-right: auto;" /></figure></div>
+<div class="exe-text">
+   <p>Un cop hem revisat el checklist, el professor o professora avaluarà el nostre arxiu LOG amb la rúbrica següent. Defineix els criteris amb què es valora el registre, les evidències, la reflexió i la presentació del document.</p>
+   <p>Coneixer aquests criteris ens ajuda a entendre què s'espera del LOG i a millorar-lo abans del lliurament. La podem descarregar en format <a href="rubrica-arxiu-LOG.pdf" title="Descàrrega pdf">PDF</a>.</p>
+   <figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px;"><img src="rubrica-arxiu-LOG.png" alt="Rúbrica de l'arxiu LOG" title="Rúbrica de l'arxiu LOG" width="901" height="637" style="display: block; margin-left: auto; margin-right: auto;" />
+   <figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Rúbrica de l'arxiu LOG</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
+   </figure>
+</div>
 </div>
 </div>
 </div>
@@ -2077,7 +2152,22 @@ function getAnswer()
 <li><strong>Varietat:</strong> Les dades provenen de múltiples fonts i formats: text, imatges, sensors, xarxes socials…</li>
 </ul>
 <p>Saber treballar amb Big Data permet a les empreses obtenir un avantatge competitiu, ja que es poden identificar patrons de consum, optimitzar processos i prendre decisions més precises basades en informació real. Per exemple, un supermercat pot ajustar automàticament el seu estoc i les seves ofertes diàries a partir dels hàbits de compra dels seus clients; una empresa agrícola pot anticipar-se a plagues o malalties en els cultius gràcies a sensors connectats i anàlisi de dades meteorològiques; i fins i tot una pime de transport pot optimitzar rutes per reduir costos i emissions.</p>
-<p>Per aprofitar tot aquest potencial, el Big Data no actua sol: sol anar de la mà de tecnologies com el Cloud Computing (que és el que treballarem durant aquest repte), que facilita l’emmagatzematge i el processament d’aquests volums massius d’informació, i de la Intel·ligència Artificial (que treballarem al final), que ajuda a extreure conclusions útils de forma automatitzada. Aquesta combinació s’ha convertit en un motor clau de la transformació digital de moltes pimes, permetent-los innovar, ser més competitives i adaptar-se als canvis del mercat de forma àgil i eficient.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="El Big Data en acció" /></div><div class="feedback js-feedback js-hidden">
+<p>Per aprofitar tot aquest potencial, el Big Data no actua sol: sol anar de la mà de tecnologies com el Cloud Computing (que és el que treballarem durant aquest repte), que facilita l’emmagatzematge i el processament d’aquests volums massius d’informació, i de la Intel·ligència Artificial (que treballarem al final), que ajuda a extreure conclusions útils de forma automatitzada. Aquesta combinació s’ha convertit en un motor clau de la transformació digital de moltes pimes, permetent-los innovar, ser més competitives i adaptar-se als canvis del mercat de forma àgil i eficient.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_activity" id="idActBigData">
+<div class="iDevice emphasis1">
+<header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)"><h1 class="iDeviceTitle" id="activitat-big-data-en-accio">El Big Data en acció</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div class="block iDevice_content">
+   <p>
+      <span class="task-meta-duration"><span>Duració:</span> 15 minuts</span><br />
+      <span class="task-meta-participants"><span>Agrupament:</span> Individual o en parelles</span>
+   </p>
    <p>Visualitzarem el vídeo següent de Telefónica per veure alguns exemples de com el Big Data i l’anàlisi de dades permeten transformar grans quantitats d’informació en coneixement útil per prendre decisions.
 Durant la visualització, fixa’t especialment en els exemples que s’hi presenten.</p>
 <figure class="exe-figure exe-media position-center license-standard-youtube" style="width: 560px;"><iframe width="560" height="314" src="https://www.youtube.com/embed/JAVcVpcqD3Q" allowfullscreen="allowfullscreen"></iframe>
@@ -2089,7 +2179,15 @@ Durant la visualització, fixa’t especialment en els exemples que s’hi prese
       <li>Quina millora o decisió permet obtenir-ne l’anàlisi?</li>
    </ul>
    <p>Inclou aquesta breu anàlisi al teu arxiu LOG amb el títol <b>“El Big Data en acció”</b>, i els camps següents: "<b>Exemple</b>", "<b>Dades</b>", "<b>Millora o decisió</b>".</p>
-</div>
+   <aside class="activitat-comprova" aria-label="Comprovació de l'activitat">
+      <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
+      <ul>
+         <li>He identificat un exemple del vídeo i les dades que s’hi analitzen.</li>
+         <li>He explicat quina millora o decisió permet l’anàlisi d’aquestes dades.</li>
+         <li>He explicat les idees amb les meves paraules i sense atribuir al vídeo informació que no presenta.</li>
+         <li>He registrat l’activitat al LOG amb el títol indicat.</li>
+      </ul>
+   </aside>
 </div>
 </div>
 </div>
@@ -2270,7 +2368,7 @@ Durant la visualització, fixa’t especialment en els exemples que s’hi prese
 <div class="exe-text"><p style="text-align: left;">Aquest recurs educatiu obert forma part d'un de més ampli que correspon a un curs del mòdul professional de Digitalització aplicada als sectors productius, per a cicles formatius de grau superior. S'organitza en cinc operacions que inclouen els diferents resultats d'aprenentatge del mòdul, i que permeten anar assolint diferents nivells de formació en digitalització fins a aconseguir la credencial completa que ens permet obtenir el certificat d'expert o experta en digitalització.</p>
 <p style="text-align: left;">En aquesta operació treballem el paper del Cloud Computing com a eina estratègica per a l'empresa, tot analitzant des del valor de les dades com a actiu essencial, els diferents tipus d'emmagatzematge i serveis al núvol, fins a les alternatives lliures disponibles. A més, abordem com integrar solucions cloud en l'estratègia de digitalització, amb activitats pràctiques i un repte final que posen l'alumnat en la pell de professionals que han de decidir, organitzar i aplicar el núvol en un context real.</p>
 <figure class="exe-figure exe-image position-center" style="width: 1000px;"><img src="AEA2-guia_didactica.png" alt="Canvas Operació Cloud Computing" title="Canvas Operació Cloud Computing" width="1000" height="750" />
-<figcaption class="figcaption"><span class="title"><em>Descàrrega en <a href="Cedec-Canvas_Operacion_CloudComputing.odp" title="Descàrrega odp">format editable</a> - Descàrrega en <a href="Cedec-Canvas_Operacion_CloudComputing.pdf" title="Descàrrega pdf">pdf</a></em></span></figcaption>
+<figcaption class="figcaption"><span class="title"><em>Descàrrega en <a target="_blank" href="AEA2-guia_didactica.pdf" title="Descàrrega pdf">pdf</a></em></span></figcaption>
 </figure>
 <figure class="exe-figure exe-image position-center license-CC-BY-SA" style="width: 900px; text-align: center;"></figure></div>
 </div>
@@ -2306,36 +2404,49 @@ Durant la visualització, fixa’t especialment en els exemples que s’hi prese
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta3394_955_2" class="block iDevice_content">
-<div class="exe-text"><table border="1" style="width: 100%; height: 133px;" class="exe-table">
+<div class="exe-text"><table border="1" style="width: 100%;" class="exe-table table-itinerari">
+<thead>
+<tr>
+   <th>Bloc / tasca</th>
+   <th>Objectiu</th>
+   <th>Sessions</th>
+   <th>Activitats a entregar</th>
+</tr>
+</thead>
 <tbody>
-<tr style="height: 28px;">
-<td style="width: 33.3333%; text-align: center; height: 28px;"><strong>Tasques</strong></td>
-<td style="width: 42.7582%; text-align: center; height: 28px;"><strong>Objectius</strong></td>
-<td style="width: 23.9084%; text-align: center; height: 28px;"><strong>Sessions</strong></td>
+<tr>
+   <td>La dada com a motor de la transformació digital</td>
+   <td>Comprendre el valor de les dades i la informació, identificar els usos del cloud i diferenciar l’emmagatzematge local i al núvol</td>
+   <td>1</td>
+   <td><a href="el_dato_como_motor_de_la_transformacin_digital.html#activitat-detectiu-de-la-dada">Detectiu de la dada</a><br /><a href="big_data.html#activitat-big-data-en-accio">El big data en acció</a></td>
 </tr>
-<tr style="height: 0px;">
-<td style="width: 33.3333%; height: 0px;">La dada com a motor de la transformació digital</td>
-<td style="width: 42.7582%; height: 0px;">Comprendre el valor de les dades i la informació, identificar els usos del cloud i diferenciar l’emmagatzematge local i al núvol.</td>
-<td style="width: 23.9084%; height: 0px;"> 1 sessió</td>
+<tr>
+   <td>Arquitectura Cloud i models emergents</td>
+   <td>Comprendre el recorregut de les dades al núvol i identificar els nivells cloud, edge, fog i mist</td>
+   <td>1</td>
+   <td><a href="arquitectura_cloud_y_modelos_emergentes.html#activitat-viatge-de-les-dades">El viatge de les dades</a></td>
 </tr>
-<tr style="height: 56px;">
-<td style="width: 33.3333%; height: 56px;">Arquitectura Cloud i models emergents</td>
-<td style="width: 42.7582%; height: 56px;">Comprendre el recorregut de les dades al núvol i identificar els diferents nivells de computació: cloud, edge, fog i mist.</td>
-<td style="width: 23.9084%; height: 56px;"> 1 sessió</td>
+<tr>
+   <td>El cloud com a estratègia digital</td>
+   <td>Identificar els models de servei i d’infraestructura cloud i relacionar-los amb les necessitats de les empreses</td>
+   <td>1</td>
+   <td><a href="el_cloud_como_estrategia_digital.html#activitat-explorem-serveis-cloud">Explorem els serveis d’un proveïdor cloud</a></td>
 </tr>
-<tr style="height: 0px;">
-<td style="width: 33.3333%; height: 0px;">El cloud com a estratègia digital</td>
-<td style="width: 42.7582%; height: 0px;">Identificar els models de servei i d’infraestructura cloud i relacionar-los amb les necessitats de les empreses.</td>
-<td style="width: 23.9084%; height: 0px;">1 sessió</td>
+<tr>
+   <td>Minirepte: De la dada al Cloud</td>
+   <td>Analitzar les necessitats d’una empresa i dissenyar una proposta cloud coherent, seleccionant serveis, infraestructura i accions d’adopció</td>
+   <td>2</td>
+   <td><a href="reto_del_dato_al_cloud.html">REPTE: De la dada al Cloud</a></td>
 </tr>
-<tr style="height: 49px;">
-<td style="width: 33.3333%; height: 49px;">REPTE: De la dada al Cloud</td>
-<td style="width: 42.7582%; height: 49px;">Analitzar les necessitats d’una empresa i dissenyar una proposta cloud coherent, seleccionant serveis, infraestructura i accions per a la seva adopció.</td>
-<td style="width: 23.9084%; height: 49px;">2 sessions</td>
+<tr>
+   <td>Tancament, metacognició i validació</td>
+   <td>Reflexionar individualment sobre els aprenentatges, les dificultats i l’evolució al llarg de l’operació, i revisar la documentació del treball abans del lliurament.</td>
+   <td>1</td>
+   <td>Reflexió individual sobre l'aprenentatge i validació del LOG</td>
 </tr>
 </tbody>
 </table>
-<p></p></div>
+</div>
 </div>
 </div>
 </div>
@@ -2347,15 +2458,21 @@ Durant la visualització, fixa’t especialment en els exemples que s’hi prese
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta3395_327_2" class="block iDevice_content">
-<div class="exe-text"><p>L'avaluació se centrarà especialment en el procés seguit per l'alumnat, tot valorant els diferents aspectes inclosos en les tres eines d'avaluació que s'utilitzaran i que enllacem a continuació, així com dues activitats autocorrectives vinculades a aspectes teòrics, que cada alumne/a pot completar de forma autònoma.</p>
+<div class="exe-text">
+<p>L’avaluació tindrà en compte el procés seguit per l’alumnat i la qualitat de les produccions elaborades al llarg de l’operació. Es diferenciarà la valoració dels aprenentatges que es mostren en les activitats i el minirepte de la valoració de com es documenten i es reflexionen aquests aprenentatges a l'arxiu LOG.</p>
+<p><br /><b>Activitats i minirepte</b></h2>
+<p>Cada activitat i el minirepte inclouen un llistat breu d’indicadors, presentat en el requadre «Abans de tancar, comprova…». Aquests indicadors expliciten què s’espera del treball i permeten a l’alumnat revisar-lo, detectar omissions i introduir millores abans de donar-lo per acabat i incorporar-lo al LOG.</p>
+<p>Els mateixos indicadors serviran de referència per a la valoració docent i la retroalimentació. Es tindrà en compte la correcció de les respostes, la justificació de les decisions i la coherència amb el material proporcionat, segons el que es demani en cada activitat.</p>
+<p>Les dues activitats autocorrectives permetran, a més, comprovar la comprensió dels conceptes treballats i identificar aspectes que calgui repassar.</p>
+<p><br /><b>Arxiu LOG</b></h2>
+<p>La revisió i la valoració del LOG se centraran en el registre i seguiment del treball, la documentació de les evidències, la reflexió personal i l’organització, presentació i correcció del document. Per fer-ho, s’utilitzaran els recursos següents:</p>
 <ul>
-   <li><a href="rubrica-operacio-cloud-computing.pdf" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." rel="noopener">Rúbrica d'avaluació d'Operació Cloud Computing</a></li>
-   <li><a href="rubrica-arxiu-LOG.pdf" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." rel="noopener">Rúbrica de la carpeta d’aprenentatge (LOG)</a></li>
-   <li><a href="checklist-arxiu-LOG.pdf" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." rel="noopener">Autoavaluació de la carpeta d’aprenentatge (LOG)</a></li>
+   <li><a href="checklist-arxiu-LOG.pdf" target="_blank" title="Descàrrega pdf. Obre en finestra nova." rel="noopener">Llista de comprovació de l'arxiu LOG</a></li>
+   <li><a href="rubrica-arxiu-LOG.pdf" target="_blank" title="Descàrrega pdf. Obre en finestra nova." rel="noopener">Rúbrica de l'arxiu LOG</a></li>
 </ul>
-<p>Per fer-ho, es recomana en primer lloc animar l'alumnat a fer una autoavaluació del seu treball mitjançant la checklist de comprovació de la carpeta d’aprenentatge (LOG), amb la intenció que faci un procés de reflexió crítica sobre el seu acompliment i que desenvolupi les competències d'aprendre a aprendre, les d'organització i gestió del temps, així com reforçar les de comunicació en un entorn professional.</p>
-<p>En segon lloc, i de cara a donar retroalimentació en aquest procés, seria interessant que la rúbrica d'avaluació de la carpeta d’aprenentatge (LOG) es revisés de forma conjunta amb cada alumne, amb l'objectiu d'afavorir-ne la reflexió i contrastar diferents punts de vista sobre un treball realitzat, la qual cosa els prepara per a la futura inserció professional, en què en molts casos l'acompliment serà revisat per supervisors d'equips, clients, etc.</p>
-<p>Finalment, s'inclou la rúbrica d'avaluació del repte i de les seves activitats, de cara a facilitar-ne la qualificació mitjançant un instrument senzill i objectiu.</p></div>
+<p>Abans del lliurament, l’alumnat utilitzarà la llista de comprovació per revisar la secció del LOG corresponent a l’operació i completar o millorar els aspectes que ho requereixin.</p>
+<p>La rúbrica servirà de referència per a la valoració docent del LOG. Es recomana compartir-ne la valoració amb cada alumne o alumna per contrastar la seva revisió amb la retroalimentació docent i concretar possibles millores. Aquesta valoració no tornarà a qualificar el contingut de les activitats, sinó la manera com l’alumnat documenta el treball i reflexiona sobre el seu aprenentatge.</p>
+</div>
 </div>
 </div>
 </div>
