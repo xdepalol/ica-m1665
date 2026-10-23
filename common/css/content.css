@@ -232,6 +232,12 @@ dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl
 .exe-table.table-itinerari th:nth-child(3),
 .exe-table.table-itinerari td:nth-child(3){text-align:center;white-space:nowrap;width:4.5em}
 
+/* Compact activity tables (font scales mildly with viewport) */
+.exe-table.table-compact{width:100%;max-width:100%;table-layout:fixed;font-size:clamp(.78em,1.55vw,.9em);box-sizing:border-box}
+.exe-table.table-compact th,
+.exe-table.table-compact td{padding:.4em .55em;vertical-align:top;word-wrap:break-word;overflow-wrap:break-word}
+.table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box}
+
 /* End-of-activity checklist (shared student/teacher criteria) */
 .activitat-comprova{margin:1.5em 0 0;padding:.85em 1em .9em 3.25em;background:#E5F3E0 url(../img/_cedec_icon_success.png) no-repeat 12px 1em;border:1px solid #cfe3c8;border-radius:2px;color:#336634}
 .activitat-comprova-titol{margin:0 0 .45em;font-weight:bold}
