@@ -1,0 +1,34 @@
+---
+description: Format d'activitats d'aprofundiment no avaluables (eXeLearning)
+globs: operacion_*/**/*.html
+alwaysApply: false
+---
+
+# Activitat d'aprofundiment no avaluable
+
+Quan es creï o adapti una activitat d'ampliació / aprofundiment no avaluable, seguir el format de «Creem un chatbot» (`operacion_ia/aplicaciones_de_la_ia_en_sectores_productivos.html`).
+
+## Capçalera i estil
+
+- Classe del wrapper: `em_iDevice_extension` (no `em_iDevice_activity`)
+- Icona gran: `../common/img/icon_extension.svg` (bombeta en cercle groc)
+- Fons càlid definit a `common/css/content.css` (`.em_iDevice_extension` → `#F7F1E4`)
+- Títol únic: `Activitat d'aprofundiment: …` (sense eyebrow «PER APROFUNDIR» ni pill/label)
+
+## Meta (sota el títol)
+
+```html
+<span class="task-meta-duration"><span>Duració:</span> …</span><br />
+<span class="task-meta-participants"><span>Agrupament:</span> …</span><br />
+<span class="task-meta-extension"><span>Activitat d'aprofundiment no avaluable</span></span>
+```
+
+La tercera línia usa color ocre (`#A67C1A`) i la mateixa icona de bombeta.
+
+## Contingut
+
+- Introducció clara que és opcional / d'ampliació
+- Sense posada en comú obligatòria ni fitxa avaluable
+- Sense bloc `activitat-comprova` («Abans de tancar, comprova…»)
+- Si cal LOG: apartat opcional tipus «Si vols recollir l'experiència al LOG», amb nota que no forma part de les evidències avaluables
+- A la guia didàctica: marcar-la com a opcional / no avaluable a l'itinerari

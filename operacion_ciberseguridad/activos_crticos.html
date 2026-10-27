@@ -51,27 +51,131 @@
 <header id="nodeDecoration"><h1 id="nodeTitle">Actius crítics</h1></header>
 <article class="iDevice_wrapper textIdevice em_iDevice em_iDevice_activity" id="idActActius">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)"><h1 class="iDeviceTitle" id="activitat-actius-critics">Actius crítics</h1></header>
+<header class="iDevice_header" style="background-image:url(../common/img/icon_activity.png)"><h1 class="iDeviceTitle" id="activitat-actius-critics">Activitat: Actius crítics</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta98_3910_2" class="block iDevice_content">
 <p>
-   <span class="task-meta-duration"><span>Duració:</span> XX minuts</span><br />
-   <span class="task-meta-participants"><span>Agrupament:</span> Individual o en parelles</span>
+   <span class="task-meta-duration"><span>Duració:</span> 50-60 minuts</span><br />
+   <span class="task-meta-participants"><span>Agrupament:</span> Grups de 3-4 persones</span>
 </p>
-<p>L'objectiu d'aquesta part del repte és ser capaços d'identificar els actius crítics de la nostra organització, és a dir, els elements que és important protegir per assegurar el correcte funcionament empresarial, i també els possibles riscos associats.</p>
-<p>Aquesta classificació d'actius crítics és un dels passos que hem de realitzar en el desenvolupament del Pla Director de Seguretat de la nostra empresa.</p>
-<p>Per fer-ho, en aquesta activitat hem d'imaginar que treballem o som empresaris d'una empresa del nostre sector i hem de completar la plantilla <a href="https://cedec.intef.es/rubrica/informe-activos/" target="_blank" title="Enllaç al banc de rúbriques. Obre en finestra nova." rel="noopener">Informe d'actius</a> que es proporciona en <a href="cedec-Informe_activos-operacion_ciberseguridad.odt" title="Descàrrega odt">format editable</a> i en format <a href="cedec-Informe_activos-operacion_ciberseguridad.pdf" title="Descàrrega pdf">pdf</a>:</p>
-<figure class="exe-figure exe-media position-center license-CC-BY-SA" style="width: 700px;"><iframe width="700" height="400" src="cedec-Informe_activos-operacion_ciberseguridad.pdf"></iframe>
-<figcaption class="figcaption"><span class="author">CEDEC</span>. <span class="title"><em>Informe d'actius</em></span> <span class="license"><span class="sep">(</span><a href="http://creativecommons.org/licenses/?lang=es" rel="license nofollow noopener" target="_blank" title="Creative Commons BY-SA">CC BY-SA</a><span class="sep">)</span></span></figcaption>
-</figure>
-<p>Un cop finalitzat aquest apartat, inclourem tots els documents a l'arxiu LOG amb l'etiqueta: Activos.OCS.</p>
+<p>Una empresa utilitza molts recursos per desenvolupar la seva activitat: informació, equips, aplicacions, serveis, xarxes, credencials… Tots aquests recursos són actius que poden necessitar protecció, però no tots tenen necessàriament la mateixa importància.</p>
+<p>En aquesta activitat analitzareu alguns dels actius d'una empresa mitjana del sector informàtic per respondre una pregunta:</p>
+<h2>Què hem de protegir?</h2>
+<p>Imagineu una empresa mitjana que presta serveis informàtics a altres empreses. Disposa d'una oficina pròpia, part del personal pot treballar remotament i utilitza diferents sistemes i serveis informàtics per desenvolupar la seva activitat i gestionar informació pròpia i dels seus clients.</p>
+<p>No coneixem tots els detalls sobre el funcionament de l'empresa. Quan ho necessiteu per prendre una decisió, podeu establir una hipòtesi raonable sobre com utilitza un determinat actiu.</p>
+<h2>1. Seleccioneu els actius</h2>
+<p>A continuació teniu alguns dels actius que podria tenir aquesta empresa:</p>
+<div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" id="btnLlistatActius" value="Amagar llistat d'actius" aria-expanded="true" aria-controls="llistatActius" /></div>
+<ul id="llistatActius">
+<li>Base de dades de clients</li>
+<li>Credencials i comptes d'accés dels treballadors</li>
+<li>Servidors que allotgen serveis de clients</li>
+<li>Servidor de fitxers intern</li>
+<li>Servei de correu electrònic corporatiu</li>
+<li>Aplicació de facturació i gestió administrativa</li>
+<li>Còpies de seguretat</li>
+<li>Equips portàtils dels treballadors</li>
+<li>Ordinadors de sobretaula de l'oficina</li>
+<li>Xarxa interna de l'empresa</li>
+<li>Xarxa Wi-Fi corporativa</li>
+<li>Connexió a Internet</li>
+<li>Lloc web corporatiu</li>
+<li>Repositori de codi font dels projectes</li>
+<li>Documentació tècnica dels sistemes i serveis</li>
+<li>Contractes i documentació comercial</li>
+<li>Telèfons mòbils corporatius</li>
+<li>Impressores i equips multifunció</li>
+</ul>
+<script type="text/javascript">
+(function () {
+   var btn = document.getElementById("btnLlistatActius");
+   var list = document.getElementById("llistatActius");
+   if (!btn || !list) return;
+   btn.addEventListener("click", function () {
+      var visible = !list.classList.contains("js-hidden");
+      if (visible) {
+         list.classList.add("js-hidden");
+         btn.setAttribute("aria-expanded", "false");
+         btn.value = "Mostrar llistat d'actius";
+      } else {
+         list.classList.remove("js-hidden");
+         btn.setAttribute("aria-expanded", "true");
+         btn.value = "Amagar llistat d'actius";
+      }
+   });
+})();
+</script>
+<p>Seleccioneu 5 actius que, segons la vostra valoració inicial, tinguin diferents nivells d'importància per al funcionament de l'empresa:</p>
+<ul>
+<li>2 d'importància alta</li>
+<li>2 d'importància mitjana</li>
+<li>1 d'importància baixa</li>
+</ul>
+<p>No hi ha una única selecció correcta. La importància d'un actiu pot variar segons com l'utilitza l'empresa i fins a quin punt en depèn.</p>
+<h2>2. Analitzeu els actius seleccionats</h2>
+<p>Per a cadascun dels cinc actius, completeu al vostre LOG una fila de la taula següent:</p>
+<div class="table-scroll">
+<table class="exe-table table-compact" border="1">
+<thead>
+<tr>
+<th scope="col">Actiu</th>
+<th scope="col">Importància</th>
+<th scope="col">Amenaça possible</th>
+<th scope="col">Probabilitat</th>
+<th scope="col">Què passaria si aquesta amenaça afectés l'actiu?</th>
+<th scope="col">Mesura de protecció</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Alta / Mitjana / Baixa</td>
+<td></td>
+<td>Alta / Mitjana / Baixa</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Quan feu l'anàlisi, tingueu en compte:</p>
+<ul>
+<li><b>Importància:</b> fins a quin punt l'empresa necessita aquest actiu per desenvolupar la seva activitat.</li>
+<li><b>Amenaça possible:</b> situació o atac que podria afectar l'actiu.</li>
+<li><b>Probabilitat:</b> possibilitat que aquesta amenaça es produeixi en l'empresa que heu imaginat.</li>
+<li><b>Conseqüències:</b> què li passaria concretament a l'empresa si l'amenaça afectés aquest actiu.</li>
+<li><b>Mesura de protecció:</b> una actuació que permetria prevenir l'amenaça o reduir-ne les conseqüències.</li>
+</ul>
+<h2>3. Quines hipòtesis heu fet?</h2>
+<p>Al vostre LOG, indiqueu breument quines hipòtesis heu assumit sobre l'empresa i que han condicionat les vostres valoracions.</p>
+<p>No cal descriure tota l'empresa. Recolliu només aquelles característiques que heu necessitat suposar per prendre decisions.</p>
+<p>Per exemple, la importància de la xarxa Wi-Fi serà diferent si els treballadors la utilitzen habitualment per accedir als recursos de l'empresa o si només s'utilitza com a xarxa de cortesia.</p>
+<h2>4. Posem en comú les nostres decisions</h2>
+<p>Compartirem les valoracions de tots els grups mitjançant Mentimeter.</p>
+<p>Indicarem quins actius hem classificat com:</p>
+<ul>
+<li>importància alta;</li>
+<li>importància mitjana;</li>
+<li>importància baixa.</li>
+</ul>
+<p>Observarem els resultats i analitzarem conjuntament alguns dels actius a la pissarra.</p>
+<p>Fixeu-vos especialment en els actius sobre els quals hi ha consens i en aquells que han rebut valoracions diferents. En aquests casos ens preguntarem:</p>
+<ul>
+<li>Per què el mateix actiu pot tenir una importància diferent segons l'empresa?</li>
+</ul>
+<p>També recuperarem algunes de les amenaces, probabilitats, conseqüències i mesures de protecció que heu proposat per completar-ne l'anàlisi conjuntament.</p>
 <aside class="activitat-comprova" aria-label="Comprovació de l'activitat">
    <p class="activitat-comprova-titol">Abans de tancar, comprova…</p>
    <ul>
-      <li>TODO indicadors de l'activitat</li>
+      <li>He seleccionat cinc actius amb la distribució d’importància demanada i he relacionat la valoració amb la funció que tenen a l’empresa.</li>
+      <li>He relacionat cada actiu amb una amenaça possible i n’he valorat la probabilitat segons el context de l’empresa.</li>
+      <li>He explicat què li passaria concretament a l’empresa si cada amenaça afectés l’actiu.</li>
+      <li>He proposat, per a cada actiu, una mesura adequada per prevenir l’amenaça o reduir-ne les conseqüències.</li>
+      <li>He explicitat les hipòtesis sobre l’empresa que expliquen les meves valoracions.</li>
    </ul>
 </aside>
+<p>No oblidis registrar aquesta tasca al teu arxiu LOG amb el títol <b>«Actius crítics»</b>.</p>
 </div>
 </div>
 </div>
