@@ -114,6 +114,8 @@ li ol,li ul{margin-top:.5em;margin-bottom:.5em}
 .em_iDevice_start .iDevice_header,.em_iDevice_start .iDevice_inner{background-color:#F9FFF9;border-color:#F9FFF9}
 .ReflectionIdevice .iDevice_header,.ReflectionIdevice .iDevice_inner,
 .em_iDevice_reflection .iDevice_header,.em_iDevice_reflection .iDevice_inner{background-color:#FFF9FA;border-color:#FFF9FA}
+.em_iDevice_extension .iDevice_header,.em_iDevice_extension .iDevice_inner{background-color:#F7F1E4;border-color:#F7F1E4}
+.em_iDevice_extension .iDevice_header{background-image:url(../img/icon_extension.svg)}
 
 #siteFooter{color:#666;font-size:.95em;padding:1em 0}
 #siteFooter a{color:#DB0B00}
@@ -214,16 +216,23 @@ dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl
 
 /* Inline activity meta (duration / grouping) with PBL icons */
 .task-meta-duration > span,
-.task-meta-participants > span{font-weight:bold;padding-left:32px;background-repeat:no-repeat;background-position:0 50%}
+.task-meta-participants > span,
+.task-meta-extension > span{font-weight:bold;padding-left:32px;background-repeat:no-repeat;background-position:0 50%}
 .task-meta-duration > span{background-image:url(../img/_cedec_pbl_duration.png)}
 .task-meta-participants > span{background-image:url(../img/_cedec_pbl_participants.png)}
+.task-meta-extension > span{background-image:url(../img/icon_extension.svg);background-size:22px auto;color:#A67C1A}
 
 /* Anchor targets for deliverable activities (didactic guide links) */
 .em_iDevice_activity .iDeviceTitle[id^="activitat-"],
 #activitat-detectiu-de-la-dada,
 #activitat-big-data-en-accio,
 #activitat-viatge-de-les-dades,
-#activitat-explorem-serveis-cloud{scroll-margin-top:6em}
+#activitat-explorem-serveis-cloud,
+#activitat-nivells-dia,
+#activitat-dissenyant-instruccions-efectives,
+#activitat-etica-de-la-ia,
+#activitat-oferta-docupacio,
+#activitat-repte-smart-pime{scroll-margin-top:6em}
 
 /* Compact itinerary table in didactic guide */
 .exe-table.table-itinerari{font-size:.92em}
@@ -231,6 +240,15 @@ dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl
 .exe-table.table-itinerari td{padding:.45em .65em;vertical-align:top}
 .exe-table.table-itinerari th:nth-child(3),
 .exe-table.table-itinerari td:nth-child(3){text-align:center;white-space:nowrap;width:4.5em}
+
+/* Compact activity tables (font scales mildly with available width) */
+.table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;container-type:inline-size}
+.exe-table.table-compact{width:100%;max-width:100%;table-layout:fixed;font-size:clamp(.68em,2.1cqi,.85em);box-sizing:border-box}
+.exe-table.table-compact th,
+.exe-table.table-compact td{padding:.35em .45em;vertical-align:top;word-wrap:break-word;overflow-wrap:anywhere;hyphens:auto}
+/* Keep fill-in rows visible when cells are empty */
+.exe-table.table-compact td:empty{height:2em}
+.exe-table.table-compact td:empty::before{content:"\00a0"}
 
 /* End-of-activity checklist (shared student/teacher criteria) */
 .activitat-comprova{margin:1.5em 0 0;padding:.85em 1em .9em 3.25em;background:#E5F3E0 url(../img/_cedec_icon_success.png) no-repeat 12px 1em;border:1px solid #cfe3c8;border-radius:2px;color:#336634}
