@@ -240,6 +240,11 @@ dt.pbl-task-participants span{padding-left:32px;background:url(../img/_cedec_pbl
 .exe-table.table-itinerari td{padding:.45em .65em;vertical-align:top}
 .exe-table.table-itinerari th:nth-child(3),
 .exe-table.table-itinerari td:nth-child(3){text-align:center;white-space:nowrap;width:4.5em}
+.exe-table.table-ponderacio{font-size:.92em;width:auto;max-width:100%}
+.exe-table.table-ponderacio th,
+.exe-table.table-ponderacio td{padding:.45em .65em;vertical-align:top}
+.exe-table.table-ponderacio th:not(:first-child),
+.exe-table.table-ponderacio td:not(:first-child){text-align:center;white-space:nowrap;width:5em}
 
 /* Compact activity tables (font scales mildly with available width) */
 .table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;container-type:inline-size}
